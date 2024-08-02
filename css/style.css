@@ -61,6 +61,11 @@ img{
     box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 }
 
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:hover.active{
+    color: #ff4d29;
+}
+
 .navbar-brand{
     font-weight: 700;
     font-size: 26px;
@@ -85,6 +90,12 @@ img{
 }
 
 .btn-brand:hover{
-    color: #ff4d29;
-    border-color: #ff4d29;
+    color: #fff;
+    background-color: #e63715;
+}
+
+/* Slider */
+
+.slider1{
+    background-image: url(../images/bg_banner1.jpg);
 }
