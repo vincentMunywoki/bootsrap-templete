@@ -22,6 +22,12 @@ img{
     width: 100%;
 }
 
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center;
+}
+
 /* NAVBAR*/
 
 .top-nav{
@@ -97,5 +103,5 @@ img{
 /* Slider */
 
 .slider1{
-    background-image: url(../images/bg_banner1.jpg);
+    background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../images/bg_banner1.jpg);
 }
