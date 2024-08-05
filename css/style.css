@@ -23,14 +23,28 @@ img{
 }
 
 section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
 }
 
 .bg-cover{
     background-position: center !important;
     background-size: cover !important;
     background-position: center;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro h6{
+    font-weight: 400;
+    color: #ff4d29;
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
 }
 
 /* NAVBAR*/
@@ -154,5 +168,24 @@ section {
     align-items: center;
 }
 .info-box img{
-    width: unset;
+    width: 90px;
+    margin-right: 24px;
 }
+
+/* MILESTONE */
+
+#milestone{
+    background: linear-gradient(rgba(255, 77, 41, 0.9), rgba(255, 77, 41, 0.9)), url(../images/bg_banner2.jpg); 
+}
+
+#milestone .display-4,
+#milestone p{
+    color: #fff;
+}
+
+#milestone .display-4{
+    font-weight: 700;
+}
+
+/* SERVICES */
+
