@@ -10,14 +10,32 @@ $(document).ready(function(){
         navText: ['PREV', 'NEXT'],
         responsive:{
             0:{
+                nav: false,
+            },
+            768:{
+                nav:true,
+            }
+        }
+    });
+
+     //Project Slider.
+     $('#project-slider').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots: false,
+        smartSpeed:1000,
+        responsive:{
+            0:{
                 
             },
-            600:{
+            768:{
                 
             },
-            1000:{
-                
+            1140: {
+
             }
         }
     })
-})
+
+});
