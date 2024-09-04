@@ -1,41 +1,54 @@
-$(document).ready(function(){
-    //Hero Slider.
-    $('#hero-slider').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:true,
+
+
+$(document).ready(function () {
+    //Owl
+    $('.hero-slider').owlCarousel({
+        loop: true,
+        margin: 0,
         items: 1,
         dots: false,
-        smartSpeed:1000,
         navText: ['PREV', 'NEXT'],
-        responsive:{
-            0:{
+        smartSpeed: 1000,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        responsive: {
+            0: {
                 nav: false,
             },
-            768:{
-                nav:true,
-            }
-        }
-    });
-
-     //Project Slider.
-     $('#project-slider').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:false,
-        dots: false,
-        smartSpeed:1000,
-        responsive:{
-            0:{
-                
-            },
-            768:{
-                
-            },
-            1140: {
-
+            768: {
+                nav: true,
             }
         }
     })
 
+    $('#projects-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        items: 2,
+        dots: true,
+        smartSpeed: 600,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2,
+                margin: 8,
+            }
+        }
+    })
+
+    $('.reviews-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        smartSpeed: 900,
+        items: 1,
+        margin: 24,
+        autoplay: true,
+        autoplayTimeout: 4000,
+    })
 });
